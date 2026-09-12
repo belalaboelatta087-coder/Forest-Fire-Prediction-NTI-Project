@@ -1,9 +1,9 @@
 # 🔥 Forest Fire Risk Prediction
 
 A Machine Learning application for predicting **forest fire risk** using environmental, temporal, and geographic features.
-
 The project compares multiple classifiers, explains feature importance with SHAP, selects a compact Top-10 feature set, tunes the probability threshold, and deploys the final model through an interactive Streamlit interface.
 
+🔗 **[Click here to view Live Demo](https://forest-fire-prediction-nti-project-fugzpdsjpmmlhcoduldu4r.streamlit.app/)**
 ![App Demo](https://github.com/belalaboelatta087-coder/Forest-Fire-Prediction-NTI-Project/blob/main/ezgif-88af20be0c5912de.gif?raw=true)
 
 ## 🎯 Project Objective
