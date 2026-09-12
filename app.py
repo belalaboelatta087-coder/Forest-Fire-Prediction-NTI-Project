@@ -56,6 +56,7 @@ def reset_inputs():
     st.session_state["ndwimin"] = 0.0
     st.session_state["days"] = 0.0
     st.session_state["latitude"] = 0.0
+    st.session_state["longitude"] = 0.0
     st.session_state["slope"] = 0.0
     st.session_state["date_input"] = ""
 
@@ -918,6 +919,22 @@ with col2:
     )
 
 
+    longitude = st.number_input(
+        "📍 Longitude | خط الطول",
+        value=0.0,
+        step=0.01,
+        format="%.6f",
+        key="longitude"
+    )
+
+    st.markdown(
+        '<div class="range-text">'
+        '🌐 Global Range: -180° – +180°'
+        '</div>',
+        unsafe_allow_html=True
+    )
+
+
     slope = st.number_input(
         "⛰️ Slope | درجة انحدار الأرض",
         value=0.0,
@@ -1025,6 +1042,13 @@ with st.expander(
 
 ---
 
+### 📍 Longitude
+خط الطول للموقع.
+
+**Unit:** Degree (°)
+
+---
+
 ### ⛰️ Slope
 درجة انحدار سطح الأرض.
 
@@ -1095,6 +1119,7 @@ if predict_clicked:
         "ndwimin": ndwimin,
         "days": days,
         "latitude": latitude,
+        "longitude": longitude,
         "slope": slope
     }
 
