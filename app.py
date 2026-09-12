@@ -1,3 +1,8 @@
+import streamlit as st
+st.title("تطبيق التنبؤ بحدوث الحرائق")
+st.write("التطبيق يعمل ويتم تحميل النموذج الآن...")
+
+
 # ============================================================
 # FOREST FIRE RISK PREDICTION
 # Streamlit Application
